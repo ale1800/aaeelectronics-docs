@@ -1,0 +1,113 @@
+---
+title: "ESP 360 Remote"
+subtitle: An all-in-one remote based on the ESP32-WROOM-32E
+format:
+  html: 
+      toc: true
+      toc-location: left
+      toc-expand: 2
+      smooth-scroll: true
+      title-block-banner: false
+---
+
+- ## ESP 360 Remote on [CrowdSupply](https://www.crowdsupply.com/aaelectronics/esp-360-remote)
+
+- ## ESP 360 Remote on [Discord](https://discord.gg/PsrK3KDkRy)
+
+
+This board boasts a RF transmitter and receiver, while IR LEDs are arranged in a circle to provide omnidirectional coverage. Additionally, it comes equipped with a temperature and humidity sensor, as well as an ambient light sensor. To top it off, the board can be powered and programmed through a USB Type-C port, which is ESD protected. Based on the ESP32-WROOM-32E, this board can be effortlessly configured with ESPHome, allowing for seamless control via Home Assistant.
+You can swap the 433MHz modules with 315MHz ones because the SRX/STX882 modules come in both version with the same pinout, so you can choose which one fit your needs the best
+
+![](/assets/esp360/photo1.jpg){width=4in fig-align="center"}
+
+I think the form factor it's nice because there are two round stackable layers. 
+
+The first layer of the board includes the ESP32, the two sensors, the buck converter and the USB circuitry.
+
+![](/assets/esp360/bottom.jpg){width=3in fig-align="center"}
+
+The second layer of the board features the IR leds and receiver and the RF modules.
+
+![](/assets/esp360/top.jpg){width=3in fig-align="center"}
+
+Inside the enclosure just stack the two layers using the x8 female header near the ESP:
+
+::: {layout-ncol=2}
+![](/assets/esp360/assembled_both.jpg){height=2in}
+
+![](/assets/esp360/assembled_bottom.jpg){height=2in}
+:::
+
+Then screw the top part and turn the board on!
+
+  ![](/assets/esp360/assembled.jpg){width=3in fig-align="center"}
+
+Now you can also program the board with the USB-C. I suggest to use ESPHOME beacuse it's super easy to setup and to integrate with Home Assistant
+
+# Installation
+Once you receive the ESP 360 Remote, if you don't have a running server of Home Assistant, you will need to follow the instructions [here](install.qmd) to use the board as a "standalone" product, otherwise just follow the [quick start guide](quickstart.qmd).
+
+# Home Assistant Integration
+
+ESP 360 REMOTE is designed to be fully integrated into Home Assistant and leverage the capabilities provided by ESPHome. If you decide to use the configuration file provided in this repo, you will see these exposed entities:
+
+![](/assets/esp360/esp-360-Home-Assistant.jpg){width=3in fig-align="center"}
+
+## Transmitting signals
+
+Thanks to the ease of use of ESPHome, you can create custom switches or integrate existing components (see https://esphome.io/components/climate/climate_ir.html) by directly modifying the yaml file, and all of this will be immediately visible on Home Assistant. Alternatively, if you want to take an even simpler route, you can use two integrated services to send raw IR and RF signals:
+
+![](/assets/esp360/services.png){width=5in fig-align="center"}
+
+This way you won't need to tinker with the ESPHome configuration and you'll be able to send signals directly from your automations!
+
+## Receiving signals
+
+When the board receives an RF signal, the **esphome.rf_code_received** event will be triggered in Home Assistant. From there, you can directly see the protocol and code of the received signal. The same feature will soon be available for the infrared receiver as well.
+
+![](/assets/esp360/event.jpg){width=5in fig-align="center"}
+
+In this case, I received the code 721136 (10110000000011110000 in binary) and protocol 2
+
+## SmartIR Integration
+
+ESPHome ensures compatibility with the widely-used SmartIR custom component for Home Assistant, thanks to its built-in support for transmitting raw signals. If you already have a SmartIR configuration in place, all you need to do is specify the appropriate service for transmitting signals and a code that is compatible with ESPHome. Here's an example of what your configuration.yaml file could look like:
+
+```
+smartir:
+
+climate:
+  - platform: smartir
+    name: Livingroom AC
+    unique_id: livingroom_ac
+    device_code: 7065
+    controller_data: esp360remote_send_ir_raw
+    temperature_sensor: sensor.living_room_temperature
+```
+For more information, check out the [SmartIR repo](https://github.com/smartHomeHub/SmartIR).
+
+# Dimensions
+
+The board is remarkably compact, measuring just 5cm in diameter and 3.5cm in height without the enclosure. This small form factor makes it a perfect fit for any space. To put its size into perspective, it's smaller than the Broadlink RM3 Mini, which is the only device I have available for comparison.
+
+
+![](/assets/esp360/vs_broadlink.jpeg){width=5in fig-align="center"}
+
+
+# Enclosure
+
+Within this repository, you can also access the two STL files for the enclosure, which enables you to print it in your preferred color to match its intended location. The pre-designed enclosure includes openings near the USB-C port and two built-in sensors to optimize airflow and cool down the temperature sensor. The top part of the enclosure can be screwed on, so there's no need for additional screws or components. I've only tested printing with light-colored PLA, and the IR transmission was not impacted at all. However, I can't make any claims about other materials or dark colors.
+
+![](/assets/esp360/without_top.jpeg){fig-align="center"}
+
+# OSHWA Certification
+In the end, the project also has the OSHWA certification with UID IT000012, so it's completely open source!
+
+
+![](/assets/esp360/oshwa.jpeg){width=3in fig-align="center"}
+
+# License
+
+![](/assets/esp360/license.jpg){width=2in fig-align="center"}
+
+

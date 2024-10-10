@@ -1,0 +1,159 @@
+---
+title: "Flash your device"
+format:
+  html: 
+      toc: true
+      code-fold: true
+      toc-location: left
+      smooth-scroll: true
+      code-annotations: hover
+      title-block-banner: false
+---
+
+
+Here you can flash your product directly from your browser. In order to do that, please use a chromium-based browser.
+
+- Connect your device
+- Select the type of product
+- Flash!
+
+<html>
+<body>
+  <style>
+    body {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Ubuntu, sans-serif;
+      padding: 0;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 12px;
+    }
+    h2 {
+      margin-top: 2em;
+    }
+    h3 {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #03a9f4;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+    .hidden {
+      display: none;
+    }
+    esp-web-install-button[install-unsupported] {
+      visibility: inherit;
+    }
+    .content pre {
+      max-width: 100%;
+      overflow-y: scroll;
+    }
+    .footer {
+      margin-top: 24px;
+      border-top: 1px solid #ccc;
+      padding-top: 24px;
+      text-align: center;
+    }
+    .footer .initiative {
+      font-style: italic;
+      margin-top: 16px;
+    }
+    table {
+      border-spacing: 0;
+    }
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+    }
+    .radios li {
+      list-style: none;
+      line-height: 2em;
+    }
+  </style>
+
+<h1>Software installer</h1>
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+
+
+ <!-- Selezioni del prodotto (si può modificare aggiungendo scelte)-->
+<p>Select your product</p>
+<ul class="radios">
+  <li>
+    <label><input type="radio" name="type" value="yulc" /> YULC</label>
+  </li>
+  <li>
+    <label><input type="radio" name="type" value="esp360remote" /> ESP 360 REMOTE</label>
+  </li>
+
+  <!-- Drop Down menu con le opzioni in base al prodotto selezionato -->
+<select name="Software" id="software" hidden="hidden">
+</select>
+
+
+  <!-- Script per gestire in maniera dinamica il software (Si può modificare)-->
+<script>
+
+  const options = {
+    yulc: [
+      { value: 'WLED_0.15.0-b5_AR_MR', text: 'WLED' },
+      { value: 'ESPHome', text: 'ESPHOME' }
+    ],
+    esp360remote: [
+      { value: 'Another_Option', text: 'Another Option' },
+      { value: 'More_Options', text: 'More Options' }
+    ]
+  };
+
+  function updateSelect(productType) {
+    const select = document.getElementById('software');
+
+    select.hidden = false; // Mostrare la select
+
+    select.innerHTML = ''; // Svuotare le opzioni esistenti
+
+    options[productType].forEach(option => { // Aggiungere le nuove opzioni in base al prodotto selezionato
+      const opt = document.createElement('option');
+      opt.value = option.value;
+      opt.textContent = option.text;
+      select.appendChild(opt);
+    });
+  }
+
+  // Aggiungere un listener ai radio buttons
+  document.querySelectorAll('input[name="type"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      updateSelect(this.value);
+    });
+  });
+
+</script>
+
+
+</ul>
+<p class="button-row" align="center">
+  <esp-web-install-button class="invisible"></esp-web-install-button>
+</p>
+
+ <!-- Script per scegliere manifest-->
+<script>
+  document.querySelectorAll('input[name="type"]').forEach(radio =>
+    radio.addEventListener("change", () => {
+
+      let element = document.getElementById("software");
+      element.removeAttribute("hidden");
+
+      const button = document.querySelector('esp-web-install-button');
+      button.manifest = `../../Software/manifest_${radio.value}_${element.value}.json`;
+      button.classList.remove('invisible');
+    }
+  ));
+</script>
+
+</body>
+</html>
