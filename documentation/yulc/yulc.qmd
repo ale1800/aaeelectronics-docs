@@ -52,7 +52,7 @@ This is an interactive view of all the YULC possible settings:
 ```
 
 
-This is an extended version.
+This is a full-detailed version.
 
 ![](/assets/yulc/list.png)
 
