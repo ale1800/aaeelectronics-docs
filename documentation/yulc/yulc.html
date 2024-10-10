@@ -240,7 +240,7 @@ So, in few words, <strong>YULC</strong> consists in a full-featured board that c
 <p>This is an interactive view of all the YULC possible settings:</p>
 <!-- <iframe src="./template.html" id="myIframe" width="1300" height="600"></iframe> -->
 <iframe src="./template.html" id="yulc_frame" width="100%" height="550" overflow="hidden" display="block"></iframe>
-<p>This is an extended version.</p>
+<p>This is a full-detailed version.</p>
 <p><img src="../../assets/yulc/list.png" class="img-fluid"></p>
 <ol type="1">
 <li>This is the main jumper that you have to select before anything else and before powering the board. If you join the <code>EXT</code> pins, YULC will be powered through the barrel jack power supply, not through the USB-C. So you can use a power supply up to 24V and then decide if you want to buck it to 5V or 12V or use it directly to the output bypassing the buck converter. With this selection, you are also able to safely program YULC through the USB-C while powering everything from the external power supply thanks to a back-to-back mosfet configuration. To do that <strong>you have to select 5V from the PD selection voltage (2)</strong>. There will also be those 5V on the board but they won’t power anything (To prove that just disconnect the barrel jack power supply and the board will be turned off).</li>
