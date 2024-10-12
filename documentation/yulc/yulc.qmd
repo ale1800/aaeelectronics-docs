@@ -236,13 +236,29 @@ It uses the following pins:
 
 ### WLED
 
-Wled for YULC is a manually compiled build, based on the **v0.15.0-b5 "Kosen"**. It features 2 usermods: [Audio Reactive](https://kno.wled.ge/advanced/audio-reactive/) and [MultiRelay](https://mm.kno.wled.ge/usermods/MultiRelay/).
+Wled for YULC is a manually compiled build, based on the **v0.15.0-b5 "Kosen"**. It features 4 usermods: [Audio Reactive](https://kno.wled.ge/advanced/audio-reactive/), [Internal Temperature v2](https://github.com/Aircoookie/WLED/tree/main/usermods/Internal_Temperature_v2), [MultiRelay](https://mm.kno.wled.ge/usermods/MultiRelay/) and one I created for myself to use the connected strip as a timer bar.
 
 ![](/assets/yulc/recap_usermod.jpg){width=3in fig-align="center"}
 
 **AUDIO REACTIVE**
  
 Thanks to the powerful ESP32-S3, you can really take adavantage of this integration while driving complex effects on really long strip. Yuo have multiple pins on the exposed header that you can use to read an I2S microphone.
+See [INMP441 pcb adapter](yulc.qmd#inmp441-mic-adapter).
+
+**INTERNAL TEMPERATURE v2**
+
+With this great usermod, we can directly monitor the temperature of the microcontroller thanks to the built-in temperature sensor.
+YULC has the ESP32-S3 placed on the bottom side and quite close to the buck converter zone, the main heat generator. Starting with a light load, the usermod temperature and the one measured on the inductor are quite similar, but the uC it's slower to cool down. This allows to know the S3 temperature and to safely overestimate by 4/5°C the inductor temperature.
+
+Knowing this, I slightly modified the usermod with small but significant changes.
+
+- Temperature measurement it's enabled by default.
+- Hardcoded chip 80°C limit for overtemperature protection
+- When the S3 will reach 80°C, the strip brightness will automatically drop to 0%, turning off the light.
+- YULC will restore the default behaviour when temperature will decrease below 60°C.
+
+You don't need to configure anything on this usermod, it will start to work out of the box.
+This allows to safely use YULC even if the fan stops working for some reasons.
 
 **MULTI RELAY**
 
@@ -313,7 +329,35 @@ Now you have two completely separated strips from every point of view.
 
 ![](/assets/yulc/PXL_20240917_164121899-1.gif){width=5in fig-align="center"}
 
+**STRIP AS A TIMER**
 
+I made this simple usermod to use the connected strip as a visual timer that you can control through some MQTT commands. I really like how it turned out and I think it could be a funny and eye-catching countdown.
+
+First of all, you need to enable MQTT checking **Config -> Sync Interfaces -> Enable MQTT** in WLED settings. Then fill the required parameters to connect to your MQTT broker.
+
+![](/assets/yulc/wled_mqtt.jpg){width=5in fig-align="center"}
+
+
+
+Basically, When the timer starts, the strip is filled with green color.
+Leds are turned off according to the remaining time of the timer and the color starts changing being red when the timer has ended.
+MQTT messages to use the timer are:
+
+1. **(device topic)/timerbar with payload "+X"** where **X** is the duration of the timer in seconds. If there's no active timer, with this command 
+the timer starts with a duration of **X**. If there is already a running timer, the same command adds **X** seconds to timer. In this case the strip is
+not filled again, but leds will start to turn off slower and the already turned off leds will remain off.
+
+::: {.callout-note}
+From the image, the command will be **wled/bedroom/timerbar** with payload **+X**
+:::
+
+2. **(device topic)/timerbar with payload "STOP"** -> This message ends the timer.
+
+::: {.callout-note}
+The command will be **wled/bedroom/timerbar** with payload **STOP**
+:::
+
+Everytime the timer ends, the strip returns in the previous state (effect, palette...)
 
 # License
 

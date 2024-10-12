@@ -1,8 +1,9 @@
 ---
-title: ""
+title: "Welcome!"
 ---
+Hello my friend!
 
-::: {.callout-important}
+Here you can find everything you need about these projects!
+Just select what you need from the left menu.
 
 
-:::
