@@ -20,8 +20,8 @@ website:
 format:
   html:
     theme: 
-      light: cosmo
-      dark: cosmo
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 
