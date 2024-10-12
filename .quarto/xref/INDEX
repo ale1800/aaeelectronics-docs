@@ -1,0 +1,20 @@
+{
+  "documentation/yulc/yulc.qmd": {
+    "yulc.html": "f65eb966"
+  },
+  "documentation/esp360/quickstart.qmd": {
+    "quickstart.html": "f192fc0a"
+  },
+  "documentation/esp360/esp360.qmd": {
+    "esp360.html": "39f54727"
+  },
+  "documentation/esp360/install.qmd": {
+    "install.html": "ebd24c42"
+  },
+  "documentation/flashing/flashing.qmd": {
+    "flashing.html": "efa26fb6"
+  },
+  "index.qmd": {
+    "index.html": "3c6f5451"
+  }
+}
