@@ -1,7 +1,7 @@
 {
     "pinionVersion": "0.3.0+1.ga66e513",
-    "name": " ",
-    "description": " ",
+    "name": "yulc",
+    "description": "YULC settings",
     "front": {
         "file": "front.png",
         "area": {
@@ -104,7 +104,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO6",
-                    "description": "Input, output and ADC1_CH5. Low-level glitch: the pin is at a low level output status for 60us.",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -254,7 +254,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO5",
-                    "description": "Input, output and ADC1_CH4. Low-level glitch: the pin is at a low level output status for 60us.",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -404,7 +404,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO4",
-                    "description": "Input, output and ADC1_CH3. Low-level glitch: the pin is at a low level output status for 60us.",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -3048,7 +3048,7 @@
                     "front": true,
                     "back": true,
                     "name": "/TX",
-                    "description": "Default GPIO43 behaviour. Can be remapped",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -3198,7 +3198,7 @@
                     "front": true,
                     "back": true,
                     "name": "/RX",
-                    "description": "Default GPIO44 behaviour. Can be remapped",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -3498,7 +3498,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO38",
-                    "description": "Digital Input or Output",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -3648,7 +3648,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO37",
-                    "description": "This pin is available as DIO for this S3 version (Dual PSRAM) but not available in WLED yet",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
@@ -3798,7 +3798,7 @@
                     "front": true,
                     "back": true,
                     "name": "/GPIO36",
-                    "description": "This pin is available as DIO for this S3 version (Dual PSRAM) but not available in WLED yet",
+                    "description": "",
                     "alias": false,
                     "groups": [
                         "GPIO Header"
