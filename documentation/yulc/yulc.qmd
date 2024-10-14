@@ -253,8 +253,8 @@ YULC has the ESP32-S3 placed on the bottom side and quite close to the buck conv
 Knowing this, I slightly modified the usermod with small but significant changes.
 
 - Temperature measurement it's enabled by default.
-- Hardcoded chip 80°C limit for overtemperature protection
-- When the S3 will reach 80°C, the strip brightness will automatically drop to 0%, turning off the light.
+- Hardcoded chip 70°C limit for overtemperature protection
+- When the S3 will reach 70°C, the strip brightness will automatically drop to 0%, turning off the light.
 - YULC will restore the default behaviour when temperature will decrease below 60°C.
 
 You don't need to configure anything on this usermod, it will start to work out of the box.
