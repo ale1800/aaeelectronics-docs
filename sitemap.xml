@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/esp360/quickstart.html</loc>
-    <lastmod>2024-10-14T13:14:06.063Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/esp360/esp360.html</loc>
-    <lastmod>2024-10-14T13:14:06.062Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/yulc/yulc.html</loc>
-    <lastmod>2024-10-14T13:14:06.063Z</lastmod>
-  </url>
-  <url>
     <loc>https://ale1800.github.io/aaeelectronics-docs/index.html</loc>
-    <lastmod>2024-10-14T13:14:06.063Z</lastmod>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
   </url>
   <url>
     <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/flashing/flashing.html</loc>
-    <lastmod>2024-10-14T13:14:06.063Z</lastmod>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
   </url>
   <url>
     <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/esp360/install.html</loc>
-    <lastmod>2024-10-14T13:14:06.062Z</lastmod>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/esp360/quickstart.html</loc>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/esp360/esp360.html</loc>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ale1800.github.io/aaeelectronics-docs/documentation/yulc/yulc.html</loc>
+    <lastmod>2024-10-19T15:40:50.320Z</lastmod>
   </url>
 </urlset>
