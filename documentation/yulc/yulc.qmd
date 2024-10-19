@@ -21,7 +21,7 @@ format:
 **Pre-order** [here](https://aaelectronics-shop.com/)!
 
 
-![](/assets/yulc/yulc.jpg){fig-align="center"}
+![](/assets/yulc/yulc.jpg){style="height: 5in;"fig-align="center"}
 
 **YULC** is your future-proof perfect mate for powering your lightings at 5, 12 or 24V. Thanks to its compact form factor, it can be placed almost everywhere, it features a lot of protections to **ensure safety for both the charger and the strips**, and in the meanwhile, **can provide a lot of juice to feed very power-hungry lights setup.** 
 
@@ -169,7 +169,7 @@ Pay attention to place the heatsink in a way that it does not touch any other co
 
 In the end you can place the two heatsinks for the mosfet and then mount YULC on the base locking it in place with the help of the three smallest M2 screws
 
-![](/assets/yulc/base.jpg){width=4in fig-align="center"}
+![](/assets/yulc/base.jpg){style="height: 5in;" fig-align="center"}
 
 
 ### Step 2
@@ -178,9 +178,9 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/fan.jpg){height=2in fig-align="center"}
+![](/assets/yulc/fan.jpg){style="height: 3in;" fig-align="center"}
 
-![](/assets/yulc/fan_to_pcb.jpg){height=2in fig-align="center"}
+![](/assets/yulc/fan_to_pcb.jpg){style="height: 3in;" fig-align="center"}
 
 :::
 
@@ -189,7 +189,7 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 Now, with the help of the two longer screws, connect the fan holder to the two pillars of the base
 
-![](/assets/yulc/complete.jpg){width=4in fig-align="center"}
+![](/assets/yulc/complete.jpg){style="height: 5in;" fig-align="center"}
 
 Your YULC is completely assembled, you can proceed with the [software configuration](yulc.qmd#sec-softwareconfs)
 
@@ -209,9 +209,9 @@ If you would like to use the INMP441 microphone breakout board in combination wi
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/PXL_20240927_054954133.jpg){height=2in fig-align="center"}
+![](/assets/yulc/PXL_20240927_054954133.jpg){style="height: 5in;" fig-align="center"}
 
-![](/assets/yulc/PXL_20240927_055002209.jpg){height=2in fig-align="center"}
+![](/assets/yulc/PXL_20240927_055002209.jpg){style="height: 5in;" fig-align="center"}
 
 :::
 
@@ -358,6 +358,16 @@ The command will be **wled/bedroom/timerbar** with payload **STOP**
 :::
 
 Everytime the timer ends, the strip returns in the previous state (effect, palette...)
+
+# Download resources
+
+- [Schematic](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_schematic.pdf?v=1729352248)
+- [Kicad Project]()
+- 3D Enclosure
+- [INMP441 adapter](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003)
+
+
+
 
 # License
 

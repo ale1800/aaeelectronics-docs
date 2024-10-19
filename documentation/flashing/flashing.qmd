@@ -101,12 +101,12 @@ Here you can flash your product directly from your browser. In order to do that,
 
   const options = {
     yulc: [
-      { value: 'WLED_0.15.0-b5_AR_MR', text: 'WLED' },
-      { value: 'ESPHome', text: 'ESPHOME' }
+      { value: 'WLED_0.15.0-b5_AR_MR', text: 'WLED 0.15.0-b5_AR_MR_IT' },
+      //{ value: 'ESPHome', text: 'ESPHOME' }
     ],
     esp360remote: [
-      { value: 'Another_Option', text: 'Another Option' },
-      { value: 'More_Options', text: 'More Options' }
+     // { value: 'Another_Option', text: 'Another Option' },
+     // { value: 'More_Options', text: 'More Options' }
     ]
   };
 
