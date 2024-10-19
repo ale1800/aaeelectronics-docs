@@ -4,6 +4,7 @@ project:
   resources: 
     - "./Software"
     - "./pinion"
+    - CNAME
 
 website:
   title: "AAElectronics"

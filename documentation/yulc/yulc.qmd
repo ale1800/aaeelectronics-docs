@@ -27,7 +27,7 @@ format:
 
 It also boasts an handy **built-in buck regulator** that from a maximum of 24V ensures safe 5V or 12V to your output. This mean that is also possible to use 18,19,...,24V external power supply (USB-C or barrel jack) taking advantage of their higher total power output and converting them to 5V or 12V increasing the output current.
 
-Furthermore, on the back of the board there is a **powerful ESP32-S3, directly programmable from the USB-C**, that allows you to manage even more complex effects and to run heavy tasks.  
+Furthermore, on the back of the board there is a **powerful ESP32-S3, directly programmable through the USB-C**, that allows you to manage even more complex effects and to run heavy tasks.  
 So, in few words, **YULC** consists in a full-featured board that can replace a lot of wiring messes, optimizing space and debug time in a reliable way.
 
 ## How does it work
