@@ -189,7 +189,7 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 Now, with the help of the two longer screws, connect the fan holder to the two pillars of the base
 
-![](/assets/yulc/complete.jpg){height=5in fig-align="center"}
+![](/assets/yulc/complete.jpg){height=3in fig-align="center"}
 
 Your YULC is completely assembled, you can proceed with the [software configuration](yulc.qmd#sec-softwareconfs)
 
