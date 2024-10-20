@@ -21,7 +21,7 @@ format:
 **Pre-order** [here](https://aaelectronics-shop.com/)!
 
 
-![](/assets/yulc/yulc.jpg){height=5in fig-align="center"}
+![](/assets/yulc/yulc.jpg)
 
 **YULC** is your future-proof perfect mate for powering your lightings at 5, 12 or 24V. Thanks to its compact form factor, it can be placed almost everywhere, it features a lot of protections to **ensure safety for both the charger and the strips**, and in the meanwhile, **can provide a lot of juice to feed very power-hungry lights setup.** 
 
@@ -169,7 +169,7 @@ Pay attention to place the heatsink in a way that it does not touch any other co
 
 In the end you can place the two heatsinks for the mosfet and then mount YULC on the base locking it in place with the help of the three smallest M2 screws
 
-![](/assets/yulc/base.jpg){height=4in fig-align="center"}
+![](/assets/yulc/base.jpg){height=3in fig-align="center"}
 
 
 ### Step 2
