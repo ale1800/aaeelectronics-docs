@@ -35,7 +35,7 @@ So, in few words, **YULC** consists in a full-featured board that can replace a 
 
 Here you can have a look to how the power path works:
 
-![](/assets/yulc/concept_map.png)
+![](/assets/yulc/concept_map.png){fig-align="center"}
 
 There are two power stages. The main one for the led stips and one dedicated to the ESP32
 
@@ -54,7 +54,7 @@ This is an interactive view of all the YULC possible settings:
 
 This is a full-detailed version.
 
-![](/assets/yulc/list.png)
+![](/assets/yulc/list.png){fig-align="center"}
 
 1. This is the main jumper that you have to select before anything else and before powering the board. If you join the `EXT` pins, YULC will be powered through the barrel jack power supply, not through the USB-C. So you can use a power supply up to 24V and then decide if you want to buck it to 5V or 12V or use it directly to the output bypassing the buck converter. With this selection, you are also able to safely program YULC through the USB-C while powering everything from the external power supply thanks to a back-to-back mosfet configuration. To do that **you have to select 5V from the PD selection voltage (2)**. There will also be those 5V on the board but they won't power anything (To prove that just disconnect the barrel jack power supply and the board will be turned off).
 
@@ -259,6 +259,19 @@ Knowing this, I slightly modified the usermod with small but significant changes
 
 You don't need to configure anything on this usermod, it will start to work out of the box.
 This allows to safely use YULC even if the fan stops working for some reasons.
+
+You can monitor the internal temperature inside the **"Info"** page:
+
+![](/assets/yulc/internal_temperature.png){width=4in fig-align="center"}
+
+::: {.callout-warning}
+Altough YULC can work giving max 20A from the buck converter, the board is shipped with a 15A fuse and a max 12/13A current limiting from WLED settings is heavily suggested to be on the safe side and to keep relative cool temperatures. As long as the fan it's working the internal temperature won't rise above 60/65 °C (ambient temperature + increasing) at max load but if you would really need to use full 20A at a particular voltage, you must consider to change your type of strips to one that can work with higer voltages, decreasing the needed current, injection points keeping everything safer.
+
+**Always remember to set the current limiting option according to your setup**, leaving the on-board fuse as a short-circuit only protection.
+So, go to **Config -> Led Preferences** and set everything you need:
+
+![](/assets/yulc/current_limit.png){width=6in fig-align="center"}
+:::
 
 **MULTI RELAY**
 
