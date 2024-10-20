@@ -169,7 +169,7 @@ Pay attention to place the heatsink in a way that it does not touch any other co
 
 In the end you can place the two heatsinks for the mosfet and then mount YULC on the base locking it in place with the help of the three smallest M2 screws
 
-![](/assets/yulc/base.jpg){style="height: 5in;" fig-align="center"}
+![](/assets/yulc/base.jpg){height=4in fig-align="center"}
 
 
 ### Step 2
@@ -178,9 +178,9 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/fan.jpg){style="height: 3in;" fig-align="center"}
+![](/assets/yulc/fan.jpg){height=4in fig-align="center"}
 
-![](/assets/yulc/fan_to_pcb.jpg){style="height: 3in;" fig-align="center"}
+![](/assets/yulc/fan_to_pcb.jpg){height=4in fig-align="center"}
 
 :::
 
@@ -209,9 +209,9 @@ If you would like to use the INMP441 microphone breakout board in combination wi
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/PXL_20240927_054954133.jpg){style="height: 5in;" fig-align="center"}
+![](/assets/yulc/PXL_20240927_054954133.jpg){height=5in; fig-align="center"}
 
-![](/assets/yulc/PXL_20240927_055002209.jpg){style="height: 5in;" fig-align="center"}
+![](/assets/yulc/PXL_20240927_055002209.jpg){height=5in; fig-align="center"}
 
 :::
 
