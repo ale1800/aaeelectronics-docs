@@ -163,7 +163,7 @@ First attach the inductor heatsink (the biggest one) as far to the right as poss
 
 ::: {.callout-warning}
 
-Pay attention to place the heatsink in a way that it does not touch any other components, in particular the regulator IC one
+*Pay attention to place the heatsink in a way that it does not touch any other components, in particular the regulator IC one*
 
 :::
 
@@ -178,9 +178,10 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/fan.jpg){height=4in fig-align="center"}
 
-![](/assets/yulc/fan_to_pcb.jpg){height=4in fig-align="center"}
+![](/assets/yulc/fan.jpg){height=2in fig-align="center"}
+
+![](/assets/yulc/fan_to_pcb.jpg){height=2in fig-align="center"}
 
 :::
 
@@ -209,9 +210,9 @@ If you would like to use the INMP441 microphone breakout board in combination wi
 
 ::: {layout-ncol=2}
 
-![](/assets/yulc/PXL_20240927_054954133.jpg){height=5in; fig-align="center"}
+![](/assets/yulc/PXL_20240927_054954133.jpg){height=3in fig-align="center"}
 
-![](/assets/yulc/PXL_20240927_055002209.jpg){height=5in; fig-align="center"}
+![](/assets/yulc/PXL_20240927_055002209.jpg){height=3in fig-align="center"}
 
 :::
 
@@ -265,10 +266,10 @@ You can monitor the internal temperature inside the **"Info"** page:
 ![](/assets/yulc/internal_temperature.png){width=4in fig-align="center"}
 
 ::: {.callout-warning}
-Altough YULC can work giving max 20A from the buck converter, the board is shipped with a 15A fuse and a max 12/13A current limiting from WLED settings is heavily suggested to be on the safe side and to keep relative cool temperatures. As long as the fan it's working the internal temperature won't rise above 60/65 °C (ambient temperature + increasing) at max load but if you would really need to use full 20A at a particular voltage, you must consider to change your type of strips to one that can work with higer voltages, decreasing the needed current, injection points keeping everything safer.
+*Altough YULC can work giving max 20A from the buck converter, the board is shipped with a 15A fuse and a max 12/13A current limiting from WLED settings is heavily suggested to be on the safe side and to keep relative cool temperatures. As long as the fan it's working the internal temperature won't rise above 60/65 °C (ambient temperature + increasing) at max load but if you would really need to use full 20A at a particular voltage, you must consider to change your type of strips to one that can work with higer voltages, decreasing the needed current, injection points keeping everything safer.*
 
-**Always remember to set the current limiting option according to your setup**, leaving the on-board fuse as a short-circuit only protection.
-So, go to **Config -> Led Preferences** and set everything you need:
+**Always remember to set the current limiting option according to your setup**, *leaving the on-board fuse as a short-circuit only protection.*
+*So, go to* **Config -> Led Preferences** *and set everything you need:*
 
 ![](/assets/yulc/current_limit.png){width=6in fig-align="center"}
 :::
@@ -361,13 +362,13 @@ the timer starts with a duration of **X**. If there is already a running timer, 
 not filled again, but leds will start to turn off slower and the already turned off leds will remain off.
 
 ::: {.callout-note}
-From the image, the command will be **wled/bedroom/timerbar** with payload **+X**
+*From the image, the command will be* **wled/bedroom/timerbar** *with payload* **+X**
 :::
 
 2. **(device topic)/timerbar with payload "STOP"** -> This message ends the timer.
 
 ::: {.callout-note}
-The command will be **wled/bedroom/timerbar** with payload **STOP**
+*The command will be* **wled/bedroom/timerbar** *with payload* **STOP**
 :::
 
 Everytime the timer ends, the strip returns in the previous state (effect, palette...)
