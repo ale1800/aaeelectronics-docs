@@ -178,10 +178,10 @@ Use other 4 M2 screws to mount the facing down fan on top of the holder and then
 
 ::: {layout-ncol=2}
 
-![.](/assets/yulc/fan.jpg){height=350 fig-align="center"}
+![.](/assets/yulc/fan.jpg){height=3in fig-align="center"}
 
 
-![.](/assets/yulc/fan_to_pcb.jpg){height=350 fig-align="center"}
+![.](/assets/yulc/fan_to_pcb.jpg){height=3in fig-align="center"}
 
 :::
 
