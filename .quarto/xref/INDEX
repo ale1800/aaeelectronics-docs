@@ -16,5 +16,8 @@
   },
   "index.qmd": {
     "index.html": "3c6f5451"
+  },
+  "documentation/yulc/hw_revisions.qmd": {
+    "hw_revisions.html": "04d86ed2"
   }
 }

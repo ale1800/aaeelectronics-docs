@@ -16,7 +16,7 @@ format:
 [![](https://img.shields.io/discord/1095642960365879306?label=Discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2FByGBf97C)](https://discord.com/invite/ByGBf97C)
 
 
-**Current hw rev**: [2.1](https://github.com/ale1800/YULC/blob/main/HW_VERSIONS.md)
+**Current hw rev**: [2.1](hw_revisions.qmd)
 
 **Soon available** [here](https://aaelectronics-shop.com/products/yulc)!
 
