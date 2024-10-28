@@ -376,7 +376,7 @@ Everytime the timer ends, the strip returns in the previous state (effect, palet
 # Download resources
 
 - [Schematic](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_schematic.pdf?v=1729352248)
-- [Kicad Project]()
+- [Kicad Project](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/Kicad_prj.zip?v=1730104725)
 - 3D Enclosure
 - [INMP441 adapter](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003)
 
