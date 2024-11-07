@@ -588,6 +588,7 @@ Warning
 </section>
 <section id="sec-softwareconfs" class="level2">
 <h2 class="anchored" data-anchor-id="sec-softwareconfs">Software configuration</h2>
+<p><strong>If you want to use your own software, please be sure to correctly handle the temperature board using the ESP32-S3 internal sensor adding the safety mechanism to turn off everything if the board rises over a defined temperature. If you stick with the pre-installed software or if you flash from the <a href="https://aaelectronics-docs.com/documentation/flashing/flashing.html">flashing page</a>, those protections are already implemented.</strong></p>
 <section id="wled" class="level3">
 <h3 class="anchored" data-anchor-id="wled">WLED</h3>
 <p>Wled for YULC is a manually compiled build, based on the <strong>v0.15.0-b5 “Kosen”</strong>. It features 4 usermods: <a href="https://kno.wled.ge/advanced/audio-reactive/">Audio Reactive</a>, <a href="https://github.com/Aircoookie/WLED/tree/main/usermods/Internal_Temperature_v2">Internal Temperature v2</a>, <a href="https://mm.kno.wled.ge/usermods/MultiRelay/">MultiRelay</a> and one I created for myself to use the connected strip as a timer bar.</p>
@@ -625,7 +626,7 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p><em>Altough YULC can work giving max 20A from the buck converter, the board is shipped with a 15A fuse and a max 12/13A current limiting from WLED settings is heavily suggested to be on the safe side and to keep relative cool temperatures. As long as the fan it’s working the internal temperature won’t rise above 60/65 °C (ambient temperature + increasing) at max load but if you would really need to use full 20A at a particular voltage, you must consider to change your type of strips to one that can work with higer voltages, decreasing the needed current, injection points keeping everything safer.</em></p>
-<p><strong>Always remember to set the current limiting option according to your setup</strong>, <em>leaving the on-board fuse as a short-circuit only protection.</em> <em>So, go to</em> <strong>Config -&gt; Led Preferences</strong> <em>and set everything you need:</em></p>
+<p><strong>Always remember to set the current limiting option according to your setup</strong>, <em>leaving the on-board fuse as a short-circuit only protection. It’s recommended to also size the blade fuse for your application.</em> <em>So, go to</em> <strong>Config -&gt; Led Preferences</strong> <em>and set everything you need:</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../assets/yulc/current_limit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:6in"></p>
