@@ -234,6 +234,7 @@ It uses the following pins:
 
 ## Software configuration {#sec-softwareconfs}
 
+**If you want to use your own software, please be sure to correctly handle the temperature board using the ESP32-S3 internal sensor adding the safety mechanism to turn off everything if the board rises over a defined temperature. If you stick with the pre-installed software or if you flash from the [flashing page](https://aaelectronics-docs.com/documentation/flashing/flashing.html), those protections are already implemented.**
 
 ### WLED
 
@@ -268,7 +269,7 @@ You can monitor the internal temperature inside the **"Info"** page:
 ::: {.callout-warning}
 *Altough YULC can work giving max 20A from the buck converter, the board is shipped with a 15A fuse and a max 12/13A current limiting from WLED settings is heavily suggested to be on the safe side and to keep relative cool temperatures. As long as the fan it's working the internal temperature won't rise above 60/65 °C (ambient temperature + increasing) at max load but if you would really need to use full 20A at a particular voltage, you must consider to change your type of strips to one that can work with higer voltages, decreasing the needed current, injection points keeping everything safer.*
 
-**Always remember to set the current limiting option according to your setup**, *leaving the on-board fuse as a short-circuit only protection.*
+**Always remember to set the current limiting option according to your setup**, *leaving the on-board fuse as a short-circuit only protection. It's recommended to also size the blade fuse for your application.*
 *So, go to* **Config -> Led Preferences** *and set everything you need:*
 
 ![](/assets/yulc/current_limit.png){width=6in fig-align="center"}
