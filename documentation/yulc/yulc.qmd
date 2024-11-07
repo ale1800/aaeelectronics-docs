@@ -18,7 +18,7 @@ format:
 
 **Current hw rev**: [2.1](hw_revisions.qmd)
 
-**Soon available** [here](https://aaelectronics-shop.com/products/yulc)!
+**Available** [here](https://aaelectronics-shop.com/products/yulc)!
 
 
 ![](/assets/yulc/yulc.jpg)
