@@ -145,6 +145,7 @@ Each channel is equipped with a level shifer to its data output and a high side 
 According to your type of setup, you'll want to set YULC and strips to be powered in the the best way possibile.
 Follow this steps to determine all the jumpers selection you need according to how [they work](#sec-settings_explanation):
   
+
 ![](/assets/yulc/jumper_settings.png)
 
 ::: {.callout-warning}
