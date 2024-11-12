@@ -1,5 +1,5 @@
 {
-    "name": "WLED",
+    "name": "WLED b7",
     "builds": [
       {
         "chipFamily": "ESP32-S3",
