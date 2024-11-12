@@ -5,7 +5,7 @@
         "chipFamily": "ESP32-S3",
         "improv": false,
         "parts": [
-          { "path": "./YULC/ESPHome/bootloader_dio_80m.bin", "offset": 0 },
+          { "path": "./YULC/ESPHome/bootloader_qio_80m.bin", "offset": 0 },
           { "path": "./YULC/WLED_0.15.0-b7/partitions.bin", "offset": 32768 },
           { "path": "./YULC/boot_app0.bin", "offset": 57344 },
           { "path": "./YULC/ESPHome/yulc.factory.bin", "offset": 65536 }
