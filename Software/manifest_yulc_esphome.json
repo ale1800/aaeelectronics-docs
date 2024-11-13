@@ -1,0 +1,12 @@
+{
+    "name": "ESPHome",
+    "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "improv": true,
+        "parts": [
+          { "path": "./YULC/ESPHome/yulc_esphome.bin", "offset": 0 }
+        ]
+      }
+    ]
+  } 
