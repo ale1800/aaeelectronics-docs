@@ -197,6 +197,22 @@ Your YULC is completely assembled, you can proceed with the [software configurat
 
 ### Bonus
 
+#### EXTERNAL CONNECTOR
+
+YULC also offers the possibility to solder an external connector if neither the USB-C nor the barrel jack is used.
+The used connector is [this one](https://www.mouser.it/ProductDetail/Wurth-Elektronik/691313510002?qs=2kOmHSv6VfR6BrMDgUh3kQ%3D%3D) and the mate is [this](https://www.mouser.it/ProductDetail/Wurth-Elektronik/691351500002?qs=7gQLVZk5cPkg%2FrpRGyiXgA%3D%3D)
+
+::: {.callout-warning}
+
+*This input (max 24V) does not feature a reverse voltage protection, so pay attention to the voltage polarity!*
+
+The connector will also cover some of the available exposed pins, so if you want to use it, solder it after you have already connected the GPIOs, otherwise it will be difficult to use them.
+
+:::
+![.](/assets/yulc/external_connector.png){height=3in fig-align="center"}
+
+
+
 #### DIN BRACKET
 
 The base has two more holes for M2 screws that can be used to design other types of support, like a din-mounting bracket, taken from [thingiverse](https://www.thingiverse.com/thing:2613804) and modified a bit.
