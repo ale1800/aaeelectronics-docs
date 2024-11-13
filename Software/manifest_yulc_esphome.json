@@ -5,7 +5,7 @@
         "chipFamily": "ESP32-S3",
         "improv": true,
         "parts": [
-          { "path": "./YULC/ESPHome/yulc_esphome.bin", "offset": 0 }
+          { "path": "./YULC/ESPHome/yulc_esphome_16MB.bin", "offset": 0 }
         ]
       }
     ]
