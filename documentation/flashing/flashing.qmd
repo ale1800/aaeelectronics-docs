@@ -13,7 +13,7 @@ format:
 Here you can flash your product directly from your browser. In order to do that, please use a chromium-based browser.
 
 - Connect your device
-- Select the type of product
+- Select which one it is
 - Flash!
 
 <html>
