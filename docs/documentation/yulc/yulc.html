@@ -183,6 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-softwareconfs" id="toc-sec-softwareconfs" class="nav-link" data-scroll-target="#sec-softwareconfs">Software configuration</a>
   <ul class="collapse">
   <li><a href="#wled" id="toc-wled" class="nav-link" data-scroll-target="#wled">WLED</a></li>
+  <li><a href="#esphome" id="toc-esphome" class="nav-link" data-scroll-target="#esphome">ESPHome</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#download-resources" id="toc-download-resources" class="nav-link" data-scroll-target="#download-resources">Download resources</a></li>
@@ -756,6 +757,12 @@ Note
 </div>
 <p>Everytime the timer ends, the strip returns in the previous state (effect, palette…)</p>
 </section>
+<section id="esphome" class="level3">
+<h3 class="anchored" data-anchor-id="esphome">ESPHome</h3>
+<p>ESPHome has more flexibility compared to WLED, but it has less LED-centered features. So you should decide which software fits better your setup.</p>
+<p>Flashing ESPHome through the <a href="https://aaelectronics-docs.com/documentation/flashing/flashing.html">flashing page</a> allows to have a pre-configured installation, with both the channels ready to work with addressable led strips. Also the internal temperature it’s monitored and the YULC’s output voltage is shown. As soon as the flash ends you’ll be asked to fill with your WiFi credentials.</p>
+<p>Optionally, if you use Home Assistant, the ESPHome dashboard will be able to adopt the device importing the whole configuration, that you can find <a href="https://github.com/ale1800/YULC/blob/main/Software/ESPHome/yulc.yaml">here</a>.</p>
+</section>
 </section>
 </section>
 <section id="download-resources" class="level1">
@@ -765,6 +772,8 @@ Note
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_kicad.zip?v=1730472934">Kicad Project</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_stl.zip?v=1731023106">3D Enclosure</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003">INMP441 adapter</a></li>
+<li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/WLED_b7_firmware.bin?v=1731506097">WLED bin</a></li>
+<li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_esphome.bin?v=1731506301">ESPHome bin</a></li>
 </ul>
 </section>
 <section id="license" class="level1">
