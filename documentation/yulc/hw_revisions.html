@@ -144,6 +144,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#yulc-v1.0" id="toc-yulc-v1.0" class="nav-link active" data-scroll-target="#yulc-v1.0">YULC v1.0</a></li>
   <li><a href="#yulc-v2.0" id="toc-yulc-v2.0" class="nav-link" data-scroll-target="#yulc-v2.0">YULC v2.0</a></li>
   <li><a href="#yulc-v2.1" id="toc-yulc-v2.1" class="nav-link" data-scroll-target="#yulc-v2.1">YULC v2.1</a></li>
+  <li><a href="#yulc-v2.2" id="toc-yulc-v2.2" class="nav-link" data-scroll-target="#yulc-v2.2">YULC v2.2</a></li>
   </ul>
 </nav>
     </div>
@@ -240,6 +241,21 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Output resistance v2.1 @ 12V output</figcaption>
 </figure>
 </div>
+</section>
+<section id="yulc-v2.2" class="level2">
+<h2 class="anchored" data-anchor-id="yulc-v2.2">YULC v2.2</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/yulc/yulc_v2.2.jpg" class="quarto-figure quarto-figure-center figure-img" style="height:5in"></p>
+</figure>
+</div>
+<p>Minor fixes for this version.</p>
+<ul>
+<li>Added a more powerful LDO for the ESP32-S3 (800 mA vs 500 mA of v2.1)</li>
+<li>added enough space to host an external connector if neither the USB-C nor the barrel jack are used. This gives more flexibility, better fitting more setups.</li>
+</ul>
+<p>The connector and the mating connector are respectively <a href="https://www.mouser.it/ProductDetail/Wurth-Elektronik/691313510002?qs=2kOmHSv6VfR6BrMDgUh3kQ%3D%3D">this</a> and <a href="https://www.mouser.it/ProductDetail/Wurth-Elektronik/691351500002?qs=7gQLVZk5cPkg%2FrpRGyiXgA%3D%3D">this</a></p>
+<p><strong>This input (max 24V) does not feature a reverse voltage protection, so pay attention to the voltage polarity!</strong> The connector will also cover some of the available exposed pins, so if you want to use it, solder it after you have already connected the GPIOs, otherwise it will be difficult to use them.</p>
 
 
 </section>
