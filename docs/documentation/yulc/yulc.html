@@ -219,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><a href="https://discord.com/invite/ByGBf97C"><img src="https://img.shields.io/discord/1095642960365879306?label=Discord&amp;link=https%3A%2F%2Fdiscord.com%2Finvite%2FByGBf97C" class="img-fluid"></a></p>
-<p><strong>Current hw rev</strong>: <a href="../../documentation/yulc/hw_revisions.html">2.1</a></p>
+<p><strong>Current hw rev</strong>: <a href="../../documentation/yulc/hw_revisions.html">2.2</a></p>
 <p><strong>Available</strong> <a href="https://aaelectronics-shop.com/products/yulc">here</a>!</p>
 <p><img src="../..\assets/yulc/yulc.jpg" class="img-fluid"></p>
 <p><strong>YULC</strong> is your future-proof perfect mate for powering your lightings at 5, 12 or 24V. Thanks to its compact form factor, it can be placed almost everywhere, it features a lot of protections to <strong>ensure safety for both the charger and the strips</strong>, and in the meanwhile, <strong>can provide a lot of juice to feed very power-hungry lights setup.</strong></p>
@@ -697,17 +697,21 @@ Warning
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">strip_1</span><span class="kw">:</span></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_on</span><span class="kw">:</span></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_mos_on</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_on</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_off</span><span class="kw">:</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_off</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_mos_off</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">strip_2</span><span class="kw">:</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_on</span><span class="kw">:</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_mos_on</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_on</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_off</span><span class="kw">:</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_off</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_mos_off</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">delay</span><span class="kw">:</span><span class="at"> </span><span class="st">"00:00:00.500"</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_on</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_off</span><span class="kw">:</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_off</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">delay</span><span class="kw">:</span><span class="at"> </span><span class="st">"00:00:00.500"</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_1_mos_off</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">strip_2</span><span class="kw">:</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_on</span><span class="kw">:</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_mos_on</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">delay</span><span class="kw">:</span><span class="at"> </span><span class="st">"00:00:00.500"</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_on</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">turn_off</span><span class="kw">:</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_off</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">delay</span><span class="kw">:</span><span class="at"> </span><span class="st">"00:00:00.500"</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">service</span><span class="kw">:</span><span class="at"> shell_command.strip_2_mos_off</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Now you have two completely separated strips from every point of view.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -767,11 +771,16 @@ Note
 </section>
 <section id="download-resources" class="level1">
 <h1>Download resources</h1>
+<p><strong>Hardware</strong></p>
 <ul>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_schematic.pdf?v=1729352248">Schematic</a></li>
+<li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_bom.xlsx?v=1732009381">BoM</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_kicad.zip?v=1730472934">Kicad Project</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_stl.zip?v=1731023106">3D Enclosure</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003">INMP441 adapter</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/WLED_b7_firmware.bin?v=1731506097">WLED bin</a></li>
 <li><a href="https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_esphome.bin?v=1731506301">ESPHome bin</a></li>
 </ul>

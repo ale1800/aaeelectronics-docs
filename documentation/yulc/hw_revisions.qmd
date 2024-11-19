@@ -78,3 +78,18 @@ This version also performs really well with 12V output converting a lot of power
 
 
 ![Output resistance v2.1 @ 12V output](/assets/yulc/12V_test.jpg){height=5in fig-align="left"}
+
+## YULC v2.2
+
+![](/assets/yulc/yulc_v2.2.jpg){height=5in fig-align="center"}
+
+Minor fixes for this version. 
+
+- Added a more powerful LDO for the ESP32-S3 (800 mA vs 500 mA of v2.1) 
+- added enough space to host an external connector if neither the USB-C nor the barrel jack are used. This gives more flexibility, better fitting more setups.
+
+The connector and the mating connector are respectively [this](https://www.mouser.it/ProductDetail/Wurth-Elektronik/691313510002?qs=2kOmHSv6VfR6BrMDgUh3kQ%3D%3D) and [this](https://www.mouser.it/ProductDetail/Wurth-Elektronik/691351500002?qs=7gQLVZk5cPkg%2FrpRGyiXgA%3D%3D)
+
+
+**This input (max 24V) does not feature a reverse voltage protection, so pay attention to the voltage polarity!**
+The connector will also cover some of the available exposed pins, so if you want to use it, solder it after you have already connected the GPIOs, otherwise it will be difficult to use them.
