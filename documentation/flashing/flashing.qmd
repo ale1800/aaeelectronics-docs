@@ -1,5 +1,6 @@
 ---
 title: "Flash your device"
+include-in-header: "../../ga_script.html"
 format:
   html: 
       toc: true

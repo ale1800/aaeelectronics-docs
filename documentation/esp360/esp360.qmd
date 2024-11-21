@@ -1,5 +1,6 @@
 ---
 title: "ESP 360 Remote"
+include-in-header: "../../ga_script.html"
 subtitle: An all-in-one remote based on the ESP32-WROOM-32E
 format:
   html: 

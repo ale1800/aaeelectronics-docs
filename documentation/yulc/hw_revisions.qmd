@@ -1,6 +1,7 @@
 ---
 title: "YULC"
 subtitle:  Hardware revisions
+include-in-header: "../../ga_script.html"
 format:
   html: 
       toc: true
