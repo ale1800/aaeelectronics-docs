@@ -4,7 +4,7 @@ project:
   resources: 
     - "./Software"
     - "./pinion"
-    - "ga_script.html"
+    - "./ga_script.html"
     - CNAME
 
 website:
