@@ -1,6 +1,9 @@
 ---
 title: "YULC"
 subtitle: Yes, a USB-C Led Controller
+output:
+  html_document:
+    includes: ga_script.html
 format:
   html: 
       toc: true
