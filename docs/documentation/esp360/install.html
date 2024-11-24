@@ -103,6 +103,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = {"siteId":3844580,"cookiePolicyId":64130784,"lang":"en","storage":{"useSiteId":true}};
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3844580.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async=""></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8B2JJ56RLL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8B2JJ56RLL');
+</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -217,25 +235,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For this step you will require a USB-C cable that has power + data (a normal cable should but some cheap aliexpress cable only have the power wire and no data wire) and a computer with chrome or edge browser (no firefox) open the following <a href="https://web.esphome.io/">link</a> in your browser once the device is connected to your computer using the USB-C cable you need to click on “connect”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/connect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
+<p><img src="../../assets/esp360/connect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
 </figure>
 </div>
 <p>Select the USB-Serial device, if no USB serial device appear, ensure your USB cable is good and that you have the CH240X driver (the tool give you the link to install the driver if needed)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/usb_serial.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
+<p><img src="../../assets/esp360/usb_serial.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
 </figure>
 </div>
 <p>Once you are connected you should be able to click there :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/prepare_first_use.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
+<p><img src="../../assets/esp360/prepare_first_use.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
 </figure>
 </div>
 <p>The process takes a few minutes and ask for your wifi credentials toward the end so that the device can connect to your network. once it’s done you should be able to access the webpage hosted by the ESP 360 Remote</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/esphomeweb_empty.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:6in"></p>
+<p><img src="../../assets/esp360/esphomeweb_empty.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:6in"></p>
 </figure>
 </div>
 <p>As you can see it’s empty. this is only the generic ESPHome configuration. follow to the next section to compile the firmware with the IR, RF and sensors feature</p>
@@ -250,7 +268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This option require docker but allow you to manage in an easier way your fleet of esphome device</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/esphome_environment.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
+<p><img src="../../assets/esp360/esphome_environment.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
 </figure>
 </div>
 <p>I assume you know the docker basics, here is a docker-compose.yml that you can use to run the ESPhome “fleet manager”</p>
@@ -272,43 +290,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Once it’s running you can can access it on http://127.0.0.1:6052/ From there you can create a new device</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/new_device.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2in"></p>
+<p><img src="../../assets/esp360/new_device.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2in"></p>
 </figure>
 </div>
 <p>Once done, click on skip for the install and click “edit” instead from the main menu :</p>
 <p>Replace the text with the one found in the <a href="https://github.com/ale1800/ESP-360-REMOTE/tree/main/ESPHome%20Configuration">ESPHome Configuration</a> folder. as explained in the template section of this file once happy with your config you can compile by clicking save then come back to the main menu and click the “…” then install</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/dotsmenu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/dotsmenu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>Choose manual download</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/manual_download.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/manual_download.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>The file will be compiled to a .bin that you will be able to download. You need to download the legacy format :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/legacy_format.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/legacy_format.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/bin.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/bin.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>From there, give it a name and choose ESP32</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/esphome_ota.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
+<p><img src="../../assets/esp360/esphome_ota.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
 </figure>
 </div>
 <p>Now return to the webpage of the ESP 360 Remote and under OTA Update browse for the file you previously downloaded and click update once the device as rebooted, you should see the value from the sensors and your switch</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/ota_update.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/ota_update.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>you are done :)</p>
@@ -347,7 +365,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If you don’t know these, you can start by compiling the base template and go to the webpage of the ESP 360 remote, you should see a terminal that display the data from the sensors and the IR + RF transceiver just point the remote you want to clone toward the ESP 360 remote and look at the code display in the terminal. It should looks like something like this :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/terminal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
+<p><img src="../../assets/esp360/terminal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
 </figure>
 </div>
 <p>The line that we care about is the following</p>
