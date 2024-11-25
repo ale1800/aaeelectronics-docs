@@ -429,4 +429,4 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 
 # License
 
-![](/assets/yulc/license.jpg){width=2in fig-align="center"}
+![](/assets/yulc/license.svg){width=2in fig-align="center"}
