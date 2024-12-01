@@ -2486,7 +2486,7 @@
         },
         {
             "ref": "J4",
-            "description": "Barrel jack for power supply up to 24V@20A",
+            "description": "Barrel jack (5.5 x 2.5mm) for power supply up to 24V@20A",
             "front": true,
             "back": false,
             "highlight": true,
