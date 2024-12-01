@@ -26,7 +26,7 @@ format:
 
 **YULC** is your future-proof perfect mate for powering your lightings at 5, 12 or 24V. Thanks to its compact form factor, it can be placed almost everywhere, it features a lot of protections to **ensure safety for both the charger and the strips**, and in the meanwhile, **can provide a lot of juice to feed very power-hungry lights setup.** 
 
-It also boasts an handy **built-in buck regulator** that from a maximum of 24V ensures safe 5V or 12V to your output. This mean that is also possible to use 18,19,...,24V external power supply **(USB-C with PD 3.0 protocol up to 100W or barrel jack)** taking advantage of their higher total power output and converting them to 5V or 12V increasing the output current.
+It also boasts an handy **built-in buck regulator** that from a maximum of 24V ensures safe 5V or 12V to your output. This mean that is also possible to use 18,19,...,24V external power supply **(USB-C with PD 3.0 protocol up to 100W or barrel jack (5.5 x 2.5mm))** taking advantage of their higher total power output and converting them to 5V or 12V increasing the output current.
 
 Furthermore, on the back of the board there is a **powerful ESP32-S3, directly programmable through the USB-C**, that allows you to manage even more complex effects and to run heavy tasks.  
 So, in few words, **YULC** consists in a full-featured board that can replace a lot of wiring messes, optimizing space and debug time in a reliable way.
@@ -253,6 +253,8 @@ It uses the following pins:
 ## Software configuration {#sec-softwareconfs}
 
 **If you want to use your own software, please be sure to correctly handle the temperature board using the ESP32-S3 internal sensor adding the safety mechanism to turn off everything if the board rises over a defined temperature. If you stick with the pre-installed software or if you flash from the [flashing page](https://aaelectronics-docs.com/documentation/flashing/flashing.html), those protections are already implemented.**
+
+**When powering YULC for the first time, you won't see any voltage at the output terminals, because you'll first need to turn on the mosfet of the channel you've chosen.**
 
 ### WLED
 

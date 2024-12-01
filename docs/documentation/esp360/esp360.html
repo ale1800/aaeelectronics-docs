@@ -70,39 +70,22 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script type="text/javascript">
-
     var _iub = _iub || [];
-
     _iub.csConfiguration = {"siteId":3844580,"cookiePolicyId":64130784,"lang":"en","storage":{"useSiteId":true}};
-
     </script>
-
     <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3844580.js"></script>
-
     <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async=""></script>
 
 
-
-
-
 <!-- Google tag (gtag.js) -->
-
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8B2JJ56RLL"></script>
-
 <script>
-
   window.dataLayer = window.dataLayer || [];
-
   function gtag(){dataLayer.push(arguments);}
-
   gtag('js', new Date());
 
-
-
   gtag('config', 'G-8B2JJ56RLL');
-
 </script>
 
 
@@ -218,20 +201,20 @@ ul.task-list li input[type="checkbox"] {
 <p>This board boasts a RF transmitter and receiver, while IR LEDs are arranged in a circle to provide omnidirectional coverage. Additionally, it comes equipped with a temperature and humidity sensor, as well as an ambient light sensor. To top it off, the board can be powered and programmed through a USB Type-C port, which is ESD protected. Based on the ESP32-WROOM-32E, this board can be effortlessly configured with ESPHome, allowing for seamless control via Home Assistant. You can swap the 433MHz modules with 315MHz ones because the SRX/STX882 modules come in both version with the same pinout, so you can choose which one fit your needs the best</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/photo1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
+<p><img src="../../assets/esp360/photo1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:4in"></p>
 </figure>
 </div>
 <p>I think the form factor it’s nice because there are two round stackable layers.</p>
 <p>The first layer of the board includes the ESP32, the two sensors, the buck converter and the USB circuitry.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/bottom.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/bottom.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>The second layer of the board features the IR leds and receiver and the RF modules.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/top.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/top.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>Inside the enclosure just stack the two layers using the x8 female header near the ESP:</p>
@@ -241,17 +224,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../..\assets/esp360/assembled_both.jpg" class="img-fluid"></p>
+<p><img src="../../assets/esp360/assembled_both.jpg" class="img-fluid"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../..\assets/esp360/assembled_bottom.jpg" class="img-fluid"></p>
+<p><img src="../../assets/esp360/assembled_bottom.jpg" class="img-fluid"></p>
 </div>
 </div>
 </div>
 <p>Then screw the top part and turn the board on!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/assembled.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/assembled.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <p>Now you can also program the board with the USB-C. I suggest to use ESPHOME beacuse it’s super easy to setup and to integrate with Home Assistant</p>
@@ -264,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 <p>ESP 360 REMOTE is designed to be fully integrated into Home Assistant and leverage the capabilities provided by ESPHome. If you decide to use the configuration file provided in this repo, you will see these exposed entities:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/esp-360-Home-Assistant.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/esp-360-Home-Assistant.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 <section id="transmitting-signals" class="level2">
@@ -272,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Thanks to the ease of use of ESPHome, you can create custom switches or integrate existing components (see https://esphome.io/components/climate/climate_ir.html) by directly modifying the yaml file, and all of this will be immediately visible on Home Assistant. Alternatively, if you want to take an even simpler route, you can use two integrated services to send raw IR and RF signals:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/services.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
+<p><img src="../../assets/esp360/services.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
 </figure>
 </div>
 <p>This way you won’t need to tinker with the ESPHome configuration and you’ll be able to send signals directly from your automations!</p>
@@ -282,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 <p>When the board receives an RF signal, the <strong>esphome.rf_code_received</strong> event will be triggered in Home Assistant. From there, you can directly see the protocol and code of the received signal. The same feature will soon be available for the infrared receiver as well.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/event.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
+<p><img src="../../assets/esp360/event.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
 </figure>
 </div>
 <p>In this case, I received the code 721136 (10110000000011110000 in binary) and protocol 2</p>
@@ -307,7 +290,7 @@ climate:
 <p>The board is remarkably compact, measuring just 5cm in diameter and 3.5cm in height without the enclosure. This small form factor makes it a perfect fit for any space. To put its size into perspective, it’s smaller than the Broadlink RM3 Mini, which is the only device I have available for comparison.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/vs_broadlink.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
+<p><img src="../../assets/esp360/vs_broadlink.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5in"></p>
 </figure>
 </div>
 </section>
@@ -316,7 +299,7 @@ climate:
 <p>Within this repository, you can also access the two STL files for the enclosure, which enables you to print it in your preferred color to match its intended location. The pre-designed enclosure includes openings near the USB-C port and two built-in sensors to optimize airflow and cool down the temperature sensor. The top part of the enclosure can be screwed on, so there’s no need for additional screws or components. I’ve only tested printing with light-colored PLA, and the IR transmission was not impacted at all. However, I can’t make any claims about other materials or dark colors.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/without_top.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../../assets/esp360/without_top.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -325,7 +308,7 @@ climate:
 <p>In the end, the project also has the OSHWA certification with UID IT000012, so it’s completely open source!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/oshwa.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+<p><img src="../../assets/esp360/oshwa.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
 </figure>
 </div>
 </section>
@@ -333,7 +316,7 @@ climate:
 <h1>License</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\assets/esp360/license.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2in"></p>
+<p><img src="../../assets/esp360/license.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2in"></p>
 </figure>
 </div>
 
