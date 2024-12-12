@@ -420,7 +420,7 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 - [Schematic](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_schematic.pdf?v=1729352248)
 - [BoM](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_bom.xlsx?v=1732009381)
 - [Kicad Project](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_kicad.zip?v=1730472934)
-- [3D Enclosure](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_stl.zip?v=1731023106)
+- [3D Enclosure](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_3D.zip?v=1733990832)
 - [INMP441 adapter](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003)
 
 **Software**
