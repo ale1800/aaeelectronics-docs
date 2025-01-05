@@ -103,7 +103,7 @@ Here you can flash your product directly from your browser. In order to do that,
       { value: 'esphome', text: 'ESPHOME (Experimental)' }
     ],
     esp360remote: [
-     // { value: 'Another_Option', text: 'Another Option' },
+      { value: 'esphome', text: 'ESPHOME' },
      // { value: 'More_Options', text: 'More Options' }
     ]
   };

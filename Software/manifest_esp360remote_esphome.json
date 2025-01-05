@@ -1,0 +1,12 @@
+{
+    "name": "ESPHome",
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "improv": true,
+        "parts": [
+          { "path": "./ESP_360_REMOTE/ESPHome/firmware.factory.bin", "offset": 0 }
+        ]
+      }
+    ]
+  } 
