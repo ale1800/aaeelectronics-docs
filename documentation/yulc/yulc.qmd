@@ -14,7 +14,7 @@ format:
       #self-contained: true
 ---
 
-[![](https://img.shields.io/discord/1095642960365879306?label=Discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2FByGBf97C)](https://discord.gg/V3JhXDqu)
+[![](https://img.shields.io/discord/1095642960365879306?label=Discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2FByGBf97C)](https://discord.gg/Rk8EsMbcQk)
 
 
 **Current hw rev**: [2.2](hw_revisions.qmd)
