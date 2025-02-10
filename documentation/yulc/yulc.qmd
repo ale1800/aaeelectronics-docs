@@ -425,7 +425,7 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 
 ***Other custom enclosure***
 
-- [Closed box](https://www.thingiverse.com/thing:6942306) by [Iachtan86](https://www.thingiverse.com/lachtan86/designs)
+- [Closed box](https://www.thingiverse.com/thing:6942306) by [@Iachtan86](https://www.thingiverse.com/lachtan86/designs)
 - [Closed box](https://github.com/user-attachments/files/18185584/housing.4.screws.zip) by [@heidepiek](https://github.com/heidepiek)
 
 **Software**
