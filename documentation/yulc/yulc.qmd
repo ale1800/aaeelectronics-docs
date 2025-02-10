@@ -415,7 +415,7 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 
 # Download resources
 
-*Hardware*
+**Hardware**
 
 - [Schematic](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_schematic.pdf?v=1729352248)
 - [BoM](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_v2.2_bom.xlsx?v=1732009381)
@@ -428,7 +428,7 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 - [Closed box](https://www.thingiverse.com/thing:6942306) by [@Iachtan86](https://www.thingiverse.com/lachtan86/designs)
 - [Closed box](https://github.com/user-attachments/files/18185584/housing.4.screws.zip) by [@heidepiek](https://github.com/heidepiek)
 
-*Software*
+**Software**
 
 - [WLED bin](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/WLED_b7_firmware.bin?v=1731506097)
 - [ESPHome bin](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_esphome.bin?v=1731506301)
