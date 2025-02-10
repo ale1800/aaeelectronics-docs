@@ -423,6 +423,11 @@ Optionally, if you use Home Assistant, the ESPHome dashboard will be able to ado
 - [3D Enclosure](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/yulc_3D.zip?v=1733990832)
 - [INMP441 adapter](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/mic_adapter.zip?v=1729352003)
 
+***Other custom enclosure***
+
+- [Closed box](https://www.thingiverse.com/thing:6942306) by [Iachtan86](https://www.thingiverse.com/lachtan86/designs)
+- [Closed box](https://github.com/user-attachments/files/18185584/housing.4.screws.zip) by [@heidepiek](https://github.com/heidepiek)
+
 **Software**
 
 - [WLED bin](https://cdn.shopify.com/s/files/1/0852/2819/2092/files/WLED_b7_firmware.bin?v=1731506097)
